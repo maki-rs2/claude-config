@@ -14,7 +14,7 @@ PowerShell で次を実行する。
 ```powershell
 git clone https://github.com/maki-rs2/claude-config.git "$HOME\claude-config"
 New-Item -ItemType Directory -Force "$HOME\.claude" | Out-Null
-Set-Content -Path "$HOME\.claude\CLAUDE.md" -Value '@~/claude-config/CLAUDE.md' -Encoding utf8
+Set-Content -Path "$HOME\.claude\CLAUDE.md" -Value '@~/claude-config/CLAUDE.md' -Encoding ascii
 ```
 
 `~/.claude/CLAUDE.md` がすでにある場合は、上書きせずに中身をこのリポジトリの `CLAUDE.md` へ移してから実行する。
